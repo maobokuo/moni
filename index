@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(246, 246, 246);
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+      .between {
+        justify-content: space-between;
+      }
+      .cr {
+        flex-direction: column-reverse;
+      }
+      .ae {
+        align-items: flex-end;
+      }
+      .xhj {
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgb(225, 225, 225);
+        border-color: rgb(244, 244, 244);
+        height: 300px;
+        width: 200px;
+        margin: 1px 5px;
+      }
+      .jshao {
+        margin: 40px 80px;
+        height: 600px;
+        padding: 40px 30px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgb(222, 222, 222);
+        font-size: 25px;
+      }
+      .wben {
+        margin: 10px 40px;
+        height: 20px;
+        padding: 20px 20px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgb(180, 180, 180);
+      }
+      .dhang {
+        margin: o;
+        padding: 5px;
+        height: 10%;
+        border-bottom: 1px rgba(255, 255, 255, 0.136) solid;
+        /* z-index: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 上栏 -->
+    <div
+      class="column"
+      style="
+        background: linear-gradient(
+          to bottom right,
+          rgb(138, 87, 87),
+          rgb(59, 0, 59)
+        );
+        height: 60%;
+      "
+    >
+      <!-- 导航栏 -->
+      <div class="dhang"></div>
+      <div class="dhang"></div>
+    </div>
+    <!-- 下栏 -->
+    <div style="flex: 1">
+      <!-- 介绍栏 -->
+      <div class="jshao">
+        <p>热门视频</p>
+        <div class="flex between">
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+        </div>
+        <br /><br />
+        <!-- 剧名 -->
+        <div
+          class="ae"
+          style="
+            margin-top: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+        <div
+          class="ae"
+          style="
+            margin-bottom: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+      </div>
+      <div class="jshao">
+        <p>韩剧</p>
+        <div class="flex between">
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+        </div>
+        <br /><br />
+        <!-- 剧名 -->
+        <div
+          class="ae"
+          style="
+            margin-top: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+        <div
+          class="ae"
+          style="
+            margin-bottom: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+      </div>
+      <div class="jshao">
+        <p>欧美剧</p>
+        <div class="flex between">
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+          <div class="xhj"></div>
+        </div>
+        <br /><br />
+        <!-- 剧名 -->
+        <div
+          class="ae"
+          style="
+            margin-top: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+        <div
+          class="ae"
+          style="
+            margin-bottom: 20px;
+            padding: 25px;
+            border-top: 2px solid rgb(237, 237, 237);
+          "
+        ></div>
+      </div>
+      <!-- 文本拦 -->
+      <div class="wben"></div>
+      <div class="wben"></div>
+      <div class="wben" style="height: 40px"></div>
+    </div>
+  </body>
+</html>
